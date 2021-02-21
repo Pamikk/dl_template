@@ -37,7 +37,7 @@ class NonResidual(nn.Module):
 
 class Network(nn.Module):
     def __init__(self,cfg,loss):
-        super(YOLO,self).__init__()
+        super(Network,self).__init__()
         self.path = os.path.join(cfg.pre_trained_path,'yolov3.weights')
         self.encoders = ''
         decoders = []
